@@ -1,0 +1,18 @@
+# 忽略所有结果输出
+成绩/res
+
+# 忽略exe
+*.exe
+
+# 忽略辅助性文件
+*.txt
+*.sh
+__pycache__/
+*.pyc
+*.json
+
+# 保留
+!ip.sh
+
+# 忽略请求头辅助文件
+myheaders.py
