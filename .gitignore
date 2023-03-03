@@ -1,5 +1,5 @@
 # 忽略所有结果输出
-成绩/res
+成绩/res/*
 
 # 忽略exe
 *.exe
@@ -9,7 +9,6 @@
 *.sh
 __pycache__/
 *.pyc
-*.json
 
 # 保留
 !ip.sh

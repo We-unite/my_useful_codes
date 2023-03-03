@@ -69,6 +69,20 @@ with open("res/gpa.md", "w", encoding="utf-8") as file:
     file.write("总分数：%.4f\n\n" % Class)
     file.write("加权学分绩：%.4f\n\n" % (class_score/scores))
     file.write("平均分：%.4f\n\n" % (Class/len(courses)*len(title)))
+
+    # 考试课学分绩计算
+    exam_count=0 # 考试课程数
+    exam_class_score=0 # 考试课总分
+    exam_score=0 # 考试课总学分
+    exam_gpa=0 # 考试课实得学分
+    for i in range(0, len(courses), len(title)):
+        if courses[i+6] == "是":
+            exam_count += 1
+            exam_class_score += float(courses[i+8])
+            exam_score += float(courses[i+7])
+            exam_gpa += float(courses[i+8])*float(courses[i+7])
+    file.write("考试课平均学分绩：%.4f\n\n" % (exam_gpa/exam_score))
+    file.write("考试课加权学分绩：%.4f\n\n" % (exam_class_score/exam_count))
 print("写入文件成功！")
 
 # 转换为pdf并删除源文件

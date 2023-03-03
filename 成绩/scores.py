@@ -95,6 +95,20 @@ with open(file_name+".md", "w", encoding="utf-8") as f:
         i += 1
     f.write("加权学分绩：%.4f\n\n" % (class_score/score))
     f.write("平均学分绩：%.4f\n" % (Class/len(info)))
+
+    # 考试课学分绩
+    exam_class_score = 0 # 考试课总学分学分
+    exam_score = 0 # 考试课总分
+    exam_gpa=0 # 考试课实得学分
+    exam_count=0 # 考试课门数
+    for i in range(len(info)):
+        if (info[i][8] == "是"):
+            exam_score += float(info[i][7])
+            exam_class_score += float(info[i][11])
+            exam_gpa+=float(info[i][7])*float(info[i][11])
+            exam_count+=1
+    f.write("\n考试课平均学分绩：%.4f\n\n"%(exam_class_score/exam_count))
+    f.write("考试课加权学分绩：%.4f\n\n"%(exam_gpa/exam_score))
 print("文件写入成功！")
 
 # 转换为pdf并删除源文件
