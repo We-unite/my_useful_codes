@@ -66,6 +66,8 @@
   - 结果不同，证明出了某些bug，输出报错，删除ip.txt和new.txt，保留旧的settings.json，保证安全。
 - 在不同步骤之间加了2s停顿，方便人眼看到每一步的结果。
 
+我的[settings.json](settings.json)备份
+
 ## 关于json.bat
 
 [json.bat](/mypath/json.bat)是用来替代上述更改VSCode的方案的，因为`exe`实在是太大了。
