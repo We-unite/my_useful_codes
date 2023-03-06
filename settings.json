@@ -2,7 +2,6 @@
 //链接：https://zhuanlan.zhihu.com/p/166523064
 //来源：知乎
 //著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 {
  //------------------------------LaTeX 配置----------------------------------
     // 设置是否自动编译
@@ -137,9 +136,6 @@
     "latex-workshop.latex.recipe.default": "lastUsed",
     // 用于反向同步的内部查看器的键绑定。ctrl/cmd +点击(默认)或双击
     "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
-
-
-
     //使用 SumatraPDF 预览编译好的PDF文件
     // 设置VScode内部查看生成的pdf文件
     "latex-workshop.view.pdf.viewer": "external",
@@ -163,9 +159,7 @@
         "\"C:/Microsoft VS Code/Code.exe\" \"C:/Microsoft VS Code/resources/app/out/cli.js\" -r -g \"%f:%l\"", // 注意修改路径
         "%PDF%"
     ],
-
     "typescript.tsserver.watchOptions": {
-
     },
     "editor.fontWeight": "normal",
     "editor.unicodeHighlight.allowedLocales": {
@@ -204,5 +198,7 @@
     },
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "editor.inlineSuggest.enabled": true,
-    "liveServer.settings.host": "192.168.43.163"
+    "liveServer.settings.host": "172.20.121.211",
+    "editor.wordWrap": "on",
+    "editor.lineNumbers": "relative",
 }

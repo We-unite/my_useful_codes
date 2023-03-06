@@ -12,6 +12,7 @@ __pycache__/
 
 # 保留
 !ip.sh
+!nothing.txt
 
 # 忽略请求头辅助文件
 myheaders.py
